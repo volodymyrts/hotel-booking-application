@@ -10,16 +10,16 @@ Once the application (web service) is started, you cat send requests to http://l
 
 **List of available endpoints:**
 
-1. GET /rooms/available/{dateIn}/{dateOut} - view list of available rooms for specified dates (date format example: 2018-03-01).
-Example: http://localhost:8080/rooms/available/2018-03-02/2018-03-13
+1. GET /rooms/available/{dateIn}/{dateOut} - view list of available rooms for specified dates (date format example: 2018-03-01).  
+   Example: http://localhost:8080/rooms/available/2018-03-02/2018-03-13
 
-2. GET /rooms/category/{category_id} - view rooms filtered by category.
-Example: http://localhost:8080/rooms/category/1
-   GET /rooms/all - view list of all rooms.
-Example: http://localhost:8080/rooms/all
+2. GET /rooms/category/{category_id} - view rooms filtered by category.  
+   Example: http://localhost:8080/rooms/category/1  
+   GET /rooms/all - view list of all rooms.  
+   Example: http://localhost:8080/rooms/all  
 
-3. POST /users/create - create new user.
-Example: http://localhost:8080/users/create with JSON body:
+3. POST /users/create - create new user.  
+   Example: http://localhost:8080/users/create with JSON body:  
 ```
 JSON example:
 {
@@ -28,8 +28,8 @@ JSON example:
 }
 ```
 
-4. POST /bookings/create - book the room for specified days.
-Example: http://localhost:8080/bookings/create with JSON body:
+4. POST /bookings/create - book the room for specified days.  
+   Example: http://localhost:8080/bookings/create with JSON body:  
 ```
 JSON example:
 {
@@ -49,18 +49,18 @@ JSON example:
 }
 ```
 
-5. GET /bookings/{user_id} - view user's bookings.
-Example: http://localhost:8080/bookings/1
+5. GET /bookings/{user_id} - view user's bookings.  
+   Example: http://localhost:8080/bookings/1  
 
-6. GET /bookings/price/{booking_id} - get total price of the booking (room for dates period + cost of additional options).
-Example: http://localhost:8080/bookings/price/1
+6. GET /bookings/price/{booking_id} - get total price of the booking (room for dates period + cost of additional options).  
+   Example: http://localhost:8080/bookings/price/1  
 
-7. GET /bookings/all - view all bookings.
-Example: http://localhost:8080/bookings/all
+7. GET /bookings/all - view all bookings.  
+   Example: http://localhost:8080/bookings/all  
 
-Additional endpoints:
-8. GET /users/all - view list of all users.
-Example: http://localhost:8080/users/all
-   GET /users/{user_id} - get user by id.
-Example: http://localhost:8080/users/1
+Additional endpoints:  
+8. GET /users/all - view list of all users.  
+   Example: http://localhost:8080/users/all  
+   GET /users/{user_id} - get user by id.  
+   Example: http://localhost:8080/users/1  
    
